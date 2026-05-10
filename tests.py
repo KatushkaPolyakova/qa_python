@@ -84,7 +84,6 @@ class TestBooksCollector:
     def test_add_book_in_favorites_book_in_books_genre_append_in_list_favorite(self):
         collector = BooksCollector()
         collector.add_new_book('Шерлок Хоумс')
-        collector.set_book_genre(name='Шерлок Хоумс',genre='Детективы')
         collector.add_book_in_favorites('Шерлок Хоумс')
         assert 'Шерлок Хоумс' in collector.favorites
 
